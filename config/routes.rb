@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   constraints Subdomain do
     get 'accounts/index'
+    get 'accounts/show'
   end
+
+  root 'accounts#top'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
